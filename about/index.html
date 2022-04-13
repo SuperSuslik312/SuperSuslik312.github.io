@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>SuperSuslik312</title>
-
-
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="yandex-verification" content="35d8e75ff211ef1f" />
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="This is the personal web-site of Ilya Savvin">
+	<title>Dossier</title>
+
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="src/favicon.ico" type="image/x-icon">
-	<meta name="robots" content="index, follow" />
+	<link rel="shortcut icon" href="../src/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../src/favicon.ico" type="image/x-icon">
+
 	<!-- Grid & Icons -->
-	<link rel="stylesheet" href="src/css/bootstrap.css">
-	<link rel="stylesheet" href="//cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
-	<link rel="stylesheet" href="//cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="../src/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
 
 	<!-- Scripts -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="src/popper.min.js"></script>
+	<script src="../src/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<script src="src/i18n.js"></script>
+	<script src="../src/i18n.js"></script>
 
-	
+
 	<!-- Styles -->
 	<style type="text/css">
 		body{background: #F5F5F5;color: #212121}
 		a{color: #444444}
-		a:hover{color: #dc3545; text-decoration: none;}
+		a:hover{color: #EC407A;text-decoration: none;}
 
 
 		.brand-text {
 			fill: #333;
 		}
 		.brand-main {
-			fill: #f44336;
+			fill: #EC407A;
 		}
 		.nav-masthead .nav-link {
 			font-weight: 500;
@@ -50,31 +47,8 @@
 
 		.nav-masthead .nav-link:hover,
 		.nav-masthead .nav-link:focus {
-			color: #f44336;
-			border-bottom-color: #f44336;
-		}
-
-		.social a {
-			background-color: rgba(0,0,0,.15);
-			text-align: center;
-			width: 2.5rem;
-			height: 2.5rem;
-			border-radius: 100%;
-			line-height: 2.5rem;
-			color: #212121;
-			font-size: 20px;
-		}
-
-		.social a:hover {
-			color: #dc3545;
-		}
-
-		.social a:active {
-			color: #fff;
-		}
-
-		.social span {
-			font-size: 20px;
+			color: #EC407A;
+			border-bottom-color: #EC407A;
 		}
 
 		.dropdown-menu {
@@ -88,12 +62,12 @@
 
 		.dropdown-item:hover, .dropdown-item:focus {
 			color: #212121;
-			background-color: rgba(244,67,54,0.5);
+			background-color: rgba(236,64,122,.5);
 		}
 
 		.dropdown-item.active, .dropdown-item:active {
 			color: #212121;
-			background-color: #f44336;
+			background-color: #EC407A;
 		}
 
 		.dropdown-item.disabled, .dropdown-item:disabled {
@@ -105,8 +79,21 @@
 			background-color: #212121;
 		}
 
-		.lang-btn {
+		a.btn-donut {
 			color: #212121;
+			background-color: rgba(0,0,0,0.1);
+			padding: 0.25rem 0.5rem;
+			font-size: 0.875rem;
+			line-height: 1.5;
+			font-size: 18px;
+			border-radius: 50px;
+			font-family: Google Sans Regular;
+			text-decoration: none;
+		}
+
+		a.btn-donut:hover {
+			color: #EC407A;
+			text-decoration: none;
 		}
 
 		/* Dark Theme */
@@ -117,7 +104,9 @@
 			.brand-text {
 				fill: #f5f5f5;
 			}
-
+			.brand-main {
+				fill: #EC407A;
+			}
 			.nav-masthead .nav-link {
 				font-weight: 500;
 				color: #9E9E9E;			
@@ -130,21 +119,8 @@
 
 			.nav-masthead .nav-link:hover,
 			.nav-masthead .nav-link:focus {
-				color: #f44336;
-				border-bottom-color: #f44336;
-			}
-
-			.social a {
-				background-color: rgba(255,255,255,.1);
-				color: #BDBDBD;
-			}
-
-			.social a:hover {
-				color: #dc3545;
-			}
-
-			.social a:active {
-				color: #fff;
+				color: #EC407A;
+				border-bottom-color: #EC407A;
 			}
 
 			.mastfoot {
@@ -162,12 +138,16 @@
 
 			.dropdown-item:hover, .dropdown-item:focus {
 				color: #f5f5f5;
-				background-color: rgba(244,67,54,0.5);
+				background-color: rgba(236,64,122,.5);
 			}
 
 			.dropdown-item.active, .dropdown-item:active {
 				color: #fff;
-				background-color: #f44336;
+				background-color: #EC407A;
+			}
+
+			.dropdown-item.disabled, .dropdown-item:disabled {
+				color: #9E9E9E;
 			}
 
 			.tooltip-inner {
@@ -175,14 +155,35 @@
 				background-color: #F5F5F5;
 			}
 
-			.lang-btn {
-				color: #ffffff;
+			a.btn-donut {
+				color: #fff;
+				background-color: rgba(255,255,255,0.1);
+				padding: 0.25rem 0.5rem;
+				font-size: 0.875rem;
+				line-height: 1.5;
+				font-size: 18px;
+				border-radius: 50px;
+				font-family: Google Sans Regular;
+				text-decoration: none;
 			}
+
+			a.btn-donut:hover {
+				color: #EC407A;
+				text-decoration: none;
+			}
+
+			.modal-content {
+				background-color: #333;
+			}
+
+			.blur { filter: invert(100%); }
 		}
 	</style>
 
+
 </head>
-<body class="text-center noselect pattern">
+<body class="text-center pattern">
+
 	<div id="page-preloader">
 		<span class="spin mdi mdi-loading mdi-spin"></span>
 		<script type="text/javascript">
@@ -194,8 +195,9 @@
 			});
 		</script>
 	</div>
+
 	<div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
-		<header class="masthead mb-auto">
+		<header class="masthead mb-auto noselect">
 			<div class="gsregular">
 				<span class="masthead-brand">
 					<svg class="brand" viewBox="0 0 89 21">
@@ -203,76 +205,58 @@
 						<path class="brand-main" d="M 9.802 20.561 L 7.047 20.561 L 7.047 12.847 L 0 1.392 L 2.32 0 L 8.526 10.295 L 14.616 0.116 L 16.791 1.392 L 9.802 12.847 L 9.802 20.561 Z M 21.362 20.521 A 7.892 7.892 0 0 0 23.867 20.909 A 8.911 8.911 0 0 0 24.527 20.885 A 7.325 7.325 0 0 0 27.709 19.923 Q 29.406 18.937 30.392 17.154 Q 31.378 15.37 31.378 12.963 A 10.017 10.017 0 0 0 31.237 11.25 A 7.48 7.48 0 0 0 30.378 8.801 Q 29.377 7.047 27.681 6.09 A 7.206 7.206 0 0 0 26.334 5.502 A 8.044 8.044 0 0 0 23.867 5.133 A 9.084 9.084 0 0 0 23.409 5.144 A 7.589 7.589 0 0 0 20.039 6.09 Q 18.328 7.047 17.342 8.816 Q 16.356 10.585 16.356 13.021 A 10.098 10.098 0 0 0 16.433 14.284 A 7.961 7.961 0 0 0 17.328 17.124 Q 18.299 18.908 20.01 19.909 A 7.122 7.122 0 0 0 21.362 20.521 Z M 23.867 18.589 A 5.435 5.435 0 0 0 25.383 18.389 A 4.06 4.06 0 0 0 27.434 17.038 A 5.453 5.453 0 0 0 28.542 14.691 A 7.86 7.86 0 0 0 28.71 13.021 A 6.199 6.199 0 0 0 28.355 10.908 A 5.804 5.804 0 0 0 28.072 10.251 A 5.567 5.567 0 0 0 26.862 8.637 A 5.269 5.269 0 0 0 26.347 8.221 Q 25.259 7.453 23.867 7.453 A 5.582 5.582 0 0 0 22.351 7.648 A 4.071 4.071 0 0 0 20.3 8.961 A 5.185 5.185 0 0 0 19.235 11.099 Q 19.044 11.87 19.026 12.774 A 9.533 9.533 0 0 0 19.024 12.963 Q 19.024 14.471 19.662 15.762 A 5.637 5.637 0 0 0 20.686 17.223 A 5.112 5.112 0 0 0 21.388 17.82 Q 22.475 18.589 23.867 18.589 Z"/>
 					</svg>
 				</span>
-				<nav class="nav nav-masthead justify-content-center">
-					<a class="nav-link active" href="index.html#"><span id="nav_home"></span></a>
-					<a class="nav-link" href="about/index.html"><span id="nav_about"></span></a>
-					<div class="nav-link dropleft">
-						<span id="lang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="mdi mdi-web"></span>
-						<div class="dropdown-menu " aria-labelledby="lang">
-							<a class="dropdown-item" href="?setLng=ru">Русский</a>
-							<a class="dropdown-item" href="?setLng=en">English</a>
-							<a class="dropdown-item" href="?setLng=jp">日本語</a>
-						</div>
+			</h1>
+
+			<nav class="nav nav-masthead justify-content-center">
+				<a class="nav-link" href="../index.html"><span id="nav_home"></span></a>
+				<a class="nav-link active" href="index.html#"><span id="nav_about"></span></a>
+				<div class="nav-link dropleft">
+					<span id="lang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="mdi mdi-web"></span>
+					<div class="dropdown-menu " aria-labelledby="lang">
+						<a class="dropdown-item" href="?setLng=ru">Русский</a>
+						<a class="dropdown-item" href="?setLng=en">English</a>
+						<a class="dropdown-item" href="?setLng=jp">日本語</a>
 					</div>
-				</nav>
-			</div>
-		</header>
-		<main role="main">
-			<h1 class="display-5 gsbold"><span id="name"></span></h1>
-			<p class="lead gsregular"><span id="about"></span></p>
-			<br>
-			<p class="social d-flex justify-content-center">
-				<a href="tg://resolve?domain=SuperSuslik312" class="mx-2 telegram" data-tooltip="Telegram">
-					<span class="mdi mdi-telegram"></span>
-				</a>
-				<a href="https://steamcommunity.com/id/SuperSuslik312/" class="mx-2 steam" data-tooltip="Steam">
-					<span class="mdi mdi-steam"></span>
-				</a>
-				<a href="https://vk.com/SuperSuslik312" class="mx-2 vk" data-tooltip="VK">
-					<span class="mdi mdi-vk"></span>
-				</a>
-				<a href="https://twitter.com/SuperSuslik312/" class="mx-2 twitter" data-tooltip="Twitter">
-					<span class="mdi mdi-twitter"></span>
-				</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main role="main">
+		<h1 class="display-4 gsbold"><span id="dossier"></span></h1><br>
+		<p class="lead gsregular"><span id="name"></span><br><br><span id="name1"></span><br><br><span id="name2"></span><br><br><span id="name3"></span><br><br><span id="name4"></span><br><br><span id="name5"></span><br><br><span id="name6"></span></p>
+	</main>
+
+	<footer class="mastfoot mt-auto small">
+		<div class="inner gsregular">
+				Copyright <span class="mdi mdi-copyright"></span> 2022 - <a href="index.html#">SuperSuslik312</a> - All Rights Reserved
 			</p>
-			<p class="social d-flex justify-content-center">
-				<a href="https://github.com/SuperSuslik312" class="mx-2 github" data-tooltip="GitHub">
-					<span class="mdi mdi-github"></span>
-				</a>
-				<a href="https://discord.com/users/640595293527736320" class="mx-2 discord" data-tooltip="Discord">
-					<span class="mdi mdi-discord"></span>
-				</a>
-				<a href="https://shikimori.one/SuperSuslik312" class="mx-2 shikimori" data-tooltip="Shikimori">
-					<span class="mdi mdi-ideogram-cjk-variant"></span>
-				</a>
-			</p>
-		</main>
+		</div>
+	</footer>
+</div>
 
-		<footer class="mastfoot mt-auto">
-			<div class="inner gsregular">
-				<small class="text-muted">Copyright <span class="mdi mdi-copyright"></span> 2022 - <a href="index.html#">SuperSuslik312</a> - All Rights Reserved</a>
-				</small>
-			</div>
-		</footer>
-	</div>
+<script>
+	$.i18n.init({
+		defaultLanguage: 'ru',
+		ns: { namespaces: ['ns.common', 'ns.special'], defaultNs: 'ns.special'},
+		useLocalStorage: false,
+		debug: false
+	}, function() {
+		$('#name').text($.t('name'));
+		$('#name1').text($.t('name1'));
+		$('#name2').text($.t('name2'));
+		$('#name3').text($.t('name3'));
+		$('#name4').text($.t('name4'));
+		$('#name5').text($.t('name5'));
+		$('#name6').text($.t('name6'));
+		$('#nav_home').text($.t('nav_home'));
+		$('#nav_about').text($.t('nav_about'));
+		$('#dossier').text($.t('dossier'));
+	});
+</script>
 
-	<script>
-		$.i18n.init({
-			defaultLanguage: 'ru',
-			ns: { namespaces: ['ns.common', 'ns.special'], defaultNs: 'ns.special'},
-			useLocalStorage: false,
-			debug: false
-		}, function() {
-			$('#name').text($.t('name'));
-			$('#about').text($.t('about'));
-			$('#nav_home').text($.t('nav_home'));
-			$('#nav_about').text($.t('nav_about'));
-		});
-	</script>
-
-	<script type="text/javascript">
-		$('#lang').on('show.bs.dropdown', function () {
-		})
-	</script>
+<script type="text/javascript">
+	$('#lang').on('show.bs.dropdown', function () {
+	})
+</script>
 </body>
 </html>

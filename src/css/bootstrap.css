@@ -21,8 +21,6 @@
         transform: translate(-50%, -50%);
     }
     .pattern {
-        width: 100%;
-        height: 100%;
         background-image: url(../images/bkg-light.svg);
         background-size: 50%;
         background-position: center;
@@ -123,49 +121,31 @@
 @media (min-width: 1281px) {
     .pattern {
         background-size: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
     }
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
     .pattern {
         background-size: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .pattern {
         background-size: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .pattern {
         background-size: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
     }
 }
 @media (min-width: 481px) and (max-width: 767px) {
     .pattern {
         background-size: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
     }
 }
 @media (min-width: 320px) and (max-width: 480px) {
     .pattern {
         background-size: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
     }
 }
 @font-face {

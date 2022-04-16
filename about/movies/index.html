@@ -193,21 +193,21 @@
 			<h1 class="display-5 gsbold"><span id="movies"></span></h1><br>
 			<p class="lead gsregular"><span id="pictures"></span></p><br>
 			<p>
-				<span id="film1"></span>
+				<a id="film1"><img id="film1img" width="300"></a>
 				<br><br>
-				<span id="film2"></span>
+				<a id="film2"><img id="film2img" width="300"></a>
 				<br><br>
-				<span id="film3"></span>
+				<a id="film3"><img id="film3img" width="300"></a>
 				<br><br>
-				<span id="film4"></span>
+				<a id="film4"><img id="film4img" width="300"></a>
 				<br><br>
-				<span id="film5"></span>
+				<a id="film5"><img id="film5img" width="300"></a>
 				<br><br>
-				<span id="film6"></span>
+				<a id="film6"><img id="film6img" width="300"></a>
 				<br><br>
-				<span id="film7"></span>
+				<a id="film7"><img id="film7img" width="300"></a>
 				<br><br>
-				<span id="film8"></span>
+				<a id="film8"><img id="film8img" width="300"></a>
 			</p>
 			<button onclick="topFunction()" id="myBtn" title="Go to top"><span class="mdi mdi-arrow-up mdi-24px"></span></button>
 			<style type="text/css">
@@ -272,14 +272,22 @@
 			$('#about').text($.t('about'));
 			$('#about-movies').text($.t('about-movies'));
 			$('#pictures').text($.t('pictures'));
-			$('#film1').append($.t('film1'));
-			$('#film2').append($.t('film2'));
-			$('#film3').append($.t('film3'));
-			$('#film4').append($.t('film4'));
-			$('#film5').append($.t('film5'));
-			$('#film6').append($.t('film6'));
-			$('#film7').append($.t('film7'));
-			$('#film8').append($.t('film8'));
+			$('#film1').attr("href", $.t('film1'));
+			$('#film1img').attr("src", $.t('film1img'));
+			$('#film2').attr("href", $.t('film2'));
+			$('#film2img').attr("src", $.t('film2img'));
+			$('#film3').attr("href", $.t('film3'));
+			$('#film3img').attr("src", $.t('film3img'));
+			$('#film4').attr("href", $.t('film4'));
+			$('#film4img').attr("src", $.t('film4img'));
+			$('#film5').attr("href", $.t('film5'));
+			$('#film5img').attr("src", $.t('film5img'));
+			$('#film6').attr("href", $.t('film6'));
+			$('#film6img').attr("src", $.t('film6img'));
+			$('#film7').attr("href", $.t('film7'));
+			$('#film7img').attr("src", $.t('film7img'));
+			$('#film8').attr("href", $.t('film8'));
+			$('#film8img').attr("src", $.t('film8img'));
 		});
 	</script>
 

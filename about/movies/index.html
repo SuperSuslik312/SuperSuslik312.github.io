@@ -25,14 +25,14 @@
 	<style type="text/css">
 		body{background: #F5F5F5;color: #212121}
 		a{color: #444444}
-		a:hover{color: #00ffff;text-decoration: none;}
+		a:hover{color: #EC407A;text-decoration: none;}
 
 
 		.brand-text {
 			fill: #333;
 		}
 		.brand-main {
-			fill: #00ffff;
+			fill: #EC407A;
 		}
 		.nav-masthead .nav-link {
 			font-weight: 500;
@@ -47,8 +47,8 @@
 
 		.nav-masthead .nav-link:hover,
 		.nav-masthead .nav-link:focus {
-			color: #00ffff;
-			border-bottom-color: #00ffff;
+			color: #EC407A;
+			border-bottom-color: #EC407A;
 		}
 
 		.dropdown-menu {
@@ -62,12 +62,12 @@
 
 		.dropdown-item:hover, .dropdown-item:focus {
 			color: #212121;
-			background-color: rgba(0,220,175,0.5);
+			background-color: rgba(236,64,122,.5);
 		}
 
 		.dropdown-item.active, .dropdown-item:active {
 			color: #212121;
-			background-color: #00ffff;
+			background-color: #EC407A;
 		}
 
 		.dropdown-item.disabled, .dropdown-item:disabled {
@@ -88,7 +88,7 @@
 				fill: #f5f5f5;
 			}
 			.brand-main {
-				fill: #00ffff;
+				fill: #EC407A;
 			}
 			.nav-masthead .nav-link {
 				font-weight: 500;
@@ -102,8 +102,8 @@
 
 			.nav-masthead .nav-link:hover,
 			.nav-masthead .nav-link:focus {
-				color: #00ffff;
-				border-bottom-color: #00ffff;
+				color: #EC407A;
+				border-bottom-color: #EC407A;
 			}
 
 			.mastfoot {
@@ -121,12 +121,12 @@
 
 			.dropdown-item:hover, .dropdown-item:focus {
 				color: #f5f5f5;
-				background-color: rgba(0,220,175,0.5);
+				background-color: rgba(236,64,122,.5);
 			}
 
 			.dropdown-item.active, .dropdown-item:active {
 				color: #fff;
-				background-color: #00ffff;
+				background-color: #EC407A;
 			}
 
 			.dropdown-item.disabled, .dropdown-item:disabled {
@@ -176,8 +176,8 @@
 					<a class="nav-link" href="/"><span id="nav_home"></span></a>
 					<a class="nav-link dropdown-toggle" href="#" id="nav_about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="nav_about"></span></a>
 					<div class="dropdown-menu " aria-labelledby="projects">
-						<a class="dropdown-item active" href="#" id="about"></a>
-						<a class="dropdown-item" href="/about/movies/" id="about-movies"></a>
+						<a class="dropdown-item" href="/about/" id="about"></a>
+						<a class="dropdown-item active" href="#" id="about-movies"></a>
 					</div>
 					<div class="nav-link dropleft">
 						<span id="lang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="mdi mdi-web"></span>
@@ -190,8 +190,65 @@
 			</div>
 		</header>
 		<main role="main">
-			<h1 class="display-5 gsbold"><span id="dossier"></span></h1><br>
-			<p class="lead gsregular"><span id="name"></span><br><br><span id="name1"></span><br><br><span id="name2"></span><br><br><span id="name3"></span><br><br><span id="name4"></span><br><br><span id="name5"></span><br><br><span id="name6"></span></p>
+			<h1 class="display-5 gsbold"><span id="movies"></span></h1><br>
+			<p class="lead gsregular"><span id="pictures"></span></p><br>
+			<p>
+				<span id="film1"></span>
+				<br><br>
+				<span id="film2"></span>
+				<br><br>
+				<span id="film3"></span>
+				<br><br>
+				<span id="film4"></span>
+				<br><br>
+				<span id="film5"></span>
+				<br><br>
+				<span id="film6"></span>
+				<br><br>
+				<span id="film7"></span>
+				<br><br>
+				<span id="film8"></span>
+			</p>
+			<button onclick="topFunction()" id="myBtn" title="Go to top"><span class="mdi mdi-arrow-up mdi-24px"></span></button>
+			<style type="text/css">
+				#myBtn {
+					height: 50px;
+					width: 50px;
+					display: none;
+					position: fixed;
+					bottom: 20px;
+					right: 30px;
+					z-index: 99;
+					border: none;
+					outline: none;
+					background-color: #EC407A;
+					color: white;
+					cursor: pointer;
+					border-radius: 50rem;
+					}
+
+					#myBtn:hover {
+					background-color: #AD1457;
+				}
+			</style>
+			<script>
+				var mybutton = document.getElementById("myBtn");
+
+				window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						mybutton.style.display = "block";
+					} else {
+						mybutton.style.display = "none";
+					}
+					}
+
+					function topFunction() {
+						document.body.scrollTop = 0;
+						document.documentElement.scrollTop = 0;
+				}
+			</script>
 		</main>
 
 		<footer class="mastfoot mt-auto">
@@ -209,18 +266,20 @@
 			useLocalStorage: false,
 			debug: false
 		}, function() {
-			$('#name').text($.t('name'));
-			$('#name1').text($.t('name1'));
-			$('#name2').text($.t('name2'));
-			$('#name3').text($.t('name3'));
-			$('#name4').text($.t('name4'));
-			$('#name5').text($.t('name5'));
-			$('#name6').text($.t('name6'));
 			$('#nav_home').text($.t('nav_home'));
 			$('#nav_about').text($.t('nav_about'));
-			$('#dossier').text($.t('dossier'));
+			$('#movies').text($.t('movies'));
 			$('#about').text($.t('about'));
 			$('#about-movies').text($.t('about-movies'));
+			$('#pictures').text($.t('pictures'));
+			$('#film1').append($.t('film1'));
+			$('#film2').append($.t('film2'));
+			$('#film3').append($.t('film3'));
+			$('#film4').append($.t('film4'));
+			$('#film5').append($.t('film5'));
+			$('#film6').append($.t('film6'));
+			$('#film7').append($.t('film7'));
+			$('#film8').append($.t('film8'));
 		});
 	</script>
 

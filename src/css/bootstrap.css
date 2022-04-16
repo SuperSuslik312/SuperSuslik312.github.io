@@ -27,6 +27,7 @@
         background-size: 50%;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
 @media (prefers-color-scheme: dark) {
@@ -53,6 +54,7 @@
         background-size: 50%;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
 .spinner {
@@ -123,6 +125,7 @@
         background-size: 50%;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -130,6 +133,7 @@
         background-size: 50%;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -137,6 +141,7 @@
         background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -144,6 +149,7 @@
         background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -151,6 +157,7 @@
         background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -158,6 +165,7 @@
         background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
 @font-face {

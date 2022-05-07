@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Dossier</title>
+	<title id="title"></title>
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="/src/favicon.ico" type="image/x-icon">
@@ -229,6 +229,7 @@
 			useLocalStorage: false,
 			debug: false
 		}, function() {
+			$('#title').text($.t('title'));
 			$('#name').text($.t('name'));
 			$('#name1').text($.t('name1'));
 			$('#name2').text($.t('name2'));

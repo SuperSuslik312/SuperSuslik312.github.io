@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title id="title"></title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/src/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/src/favicon.ico" type="image/x-icon">
+
+	<!-- Grid & Icons -->
+	<link rel="stylesheet" href="/src/css/bootstrap.css">
+	<link rel="stylesheet" href="//cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css">
+
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="/src/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="/src/i18n.js"></script>
+
+
+	<!-- Styles -->
+	<style type="text/css">
+		body{background: #F5F5F5;color: #212121}
+		a{color: #444444}
+		a:hover{color: #00ffff;text-decoration: none;}
+
+
+		.brand-text {
+			fill: #333;
+		}
+		.brand-main {
+			fill: #00ffff;
+		}
+		.nav-masthead .nav-link {
+			font-weight: 500;
+			color: #9E9E9E;
+			border-color: transparent;
+		}
+
+		.nav-masthead .active {
+			color: #212121;
+			border-bottom-color: #212121;
+		}
+
+		.nav-masthead .nav-link:hover,
+		.nav-masthead .nav-link:focus {
+			color: #00ffff;
+			border-bottom-color: #00ffff;
+		}
+
+		.dropdown-menu {
+			color: #212121;
+			background-color: #EEEEEE;
+		}
+
+		.dropdown-item {
+			color: #212121;
+		}
+
+		.dropdown-item:hover, .dropdown-item:focus {
+			color: #212121;
+			background-color: rgba(0,220,175,0.5);
+		}
+
+		.dropdown-item.active, .dropdown-item:active {
+			color: #212121;
+			background-color: #00ffff;
+		}
+
+		.dropdown-item.disabled, .dropdown-item:disabled {
+			color: #9E9E9E;
+		}
+
+		.tooltip-inner {
+			color: #f5f5f5;
+			background-color: #212121;
+		}
+
+		/* Dark Theme */
+		@media (prefers-color-scheme: dark) {
+			body{background: #111; color: #F5F5F5}
+			a{color: #444444}
+
+			.brand-text {
+				fill: #f5f5f5;
+			}
+			.brand-main {
+				fill: #00ffff;
+			}
+			.nav-masthead .nav-link {
+				font-weight: 500;
+				color: #9E9E9E;			
+			}
+
+			.nav-masthead .active {
+				color: #f5f5f5;
+				border-bottom-color: #F5F5F5;
+			}
+
+			.nav-masthead .nav-link:hover,
+			.nav-masthead .nav-link:focus {
+				color: #00ffff;
+				border-bottom-color: #00ffff;
+			}
+
+			.mastfoot {
+				color: #444444;
+			}
+
+			.dropdown-menu {
+				color: #F5F5F5;
+				background-color: #212121;
+			}
+
+			.dropdown-item {
+				color: #f5f5f5;
+			}
+
+			.dropdown-item:hover, .dropdown-item:focus {
+				color: #f5f5f5;
+				background-color: rgba(0,220,175,0.5);
+			}
+
+			.dropdown-item.active, .dropdown-item:active {
+				color: #fff;
+				background-color: #00ffff;
+			}
+
+			.dropdown-item.disabled, .dropdown-item:disabled {
+				color: #9E9E9E;
+			}
+
+			.tooltip-inner {
+				color: #212121;
+				background-color: #F5F5F5;
+			}
+
+			.modal-content {
+				background-color: #333;
+			}
+
+			.blur { filter: invert(100%); }
+		}
+	</style>
+
+
+</head>
+<body class="text-center noselect pattern">
+
+	<div id="page-preloader">
+		<span class="spin mdi mdi-loading mdi-spin"></span>
+		<script type="text/javascript">
+			$(window).on('load', function () {
+				var $preloader = $('#page-preloader'),
+				$spinner   = $preloader.find('.spin');
+				$spinner.fadeOut();
+				$preloader.delay(200).fadeOut('slow');
+			});
+		</script>
+	</div>
+
+	<div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
+		<header class="masthead mb-auto noselect">
+			<div class="gsregular">
+				<span class="masthead-brand">
+					<svg class="brand" viewBox="0 0 89 21">
+						<path class="brand-text" d="M 82.21,6.68 C 84.50,6.66 86.33,7.57 87.70,9.41 88.38,10.38 88.77,11.46 88.87,12.66 88.89,15.01 88.90,17.37 88.89,19.72 88.03,19.72 87.16,19.72 86.29,19.72 86.30,19.30 86.29,18.87 86.28,18.45 84.85,19.49 83.27,19.89 81.53,19.64 79.47,19.28 77.92,18.19 76.87,16.37 75.95,14.59 75.82,12.76 76.49,10.86 77.15,9.18 78.30,7.96 79.93,7.21 80.66,6.90 81.42,6.72 82.21,6.68 Z M 55.25,0.21 C 56.12,0.21 56.98,0.21 57.84,0.21 57.84,3.02 57.84,5.83 57.84,8.65 61.37,8.65 64.91,8.65 68.45,8.65 68.45,5.83 68.45,3.02 68.45,0.21 69.31,0.21 70.17,0.21 71.03,0.21 71.03,6.71 71.03,13.22 71.03,19.72 70.17,19.72 69.31,19.72 68.45,19.72 68.45,16.90 68.45,14.09 68.45,11.27 64.91,11.27 61.37,11.27 57.84,11.27 57.84,14.09 57.84,16.90 57.84,19.72 56.98,19.72 56.12,19.72 55.25,19.72 55.25,13.22 55.25,6.71 55.25,0.21 Z M 35.45,0.21 C 38.07,0.21 40.70,0.21 43.33,0.22 45.09,0.35 46.58,1.07 47.78,2.38 49.06,3.88 49.50,5.61 49.11,7.56 48.68,9.22 47.74,10.50 46.29,11.38 45.86,11.64 45.40,11.84 44.92,12.01 46.38,14.57 47.82,17.14 49.26,19.72 48.26,19.73 47.27,19.72 46.28,19.70 44.90,17.24 43.52,14.78 42.13,12.33 40.76,12.32 39.39,12.32 38.03,12.32 38.03,14.79 38.03,17.25 38.03,19.72 37.17,19.72 36.31,19.72 35.45,19.72 35.45,13.22 35.45,6.71 35.45,0.21 Z"/>
+						<path class="brand-main" d="M 23.33,6.68 C 25.62,6.66 27.45,7.57 28.82,9.41 29.95,11.09 30.27,12.93 29.79,14.91 29.30,16.65 28.28,17.97 26.75,18.88 25.16,19.75 23.49,19.94 21.75,19.44 19.66,18.75 18.25,17.35 17.51,15.25 16.92,13.30 17.15,11.46 18.18,9.71 19.26,8.04 20.79,7.05 22.75,6.74 22.95,6.72 23.14,6.70 23.33,6.68 Z M 0.09,0.23 C 1.21,0.21 2.33,0.21 3.46,0.23 5.38,2.78 7.30,5.32 9.23,7.87 11.15,5.32 13.06,2.77 14.99,0.23 16.11,0.21 17.23,0.21 18.35,0.22 15.74,3.67 13.14,7.12 10.53,10.58 10.52,13.62 10.52,16.67 10.52,19.72 9.65,19.72 8.79,19.72 7.92,19.72 7.92,16.67 7.92,13.62 7.91,10.58 5.31,7.12 2.70,3.67 0.09,0.23 Z"/>
+					</svg>
+				</span>
+
+				<nav class="nav nav-masthead justify-content-center">
+					<a class="nav-link" href="/"><span id="nav_home"></span></a>
+					<a class="nav-link dropdown-toggle" href="#" id="nav_about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="nav_about"></span></a>
+					<div class="dropdown-menu " aria-labelledby="projects">
+						<a class="dropdown-item active" href="#" id="about"></a>
+						<a class="dropdown-item" href="/about/movies/" id="about-movies"></a>
+					</div>
+					<div class="nav-link dropleft">
+						<span id="lang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="mdi mdi-web"></span>
+						<div class="dropdown-menu " aria-labelledby="lang">
+							<a class="dropdown-item" href="?setLng=ru">Русский</a>
+							<a class="dropdown-item" href="?setLng=en">English</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main role="main">
+			<h1 class="display-5 gsbold"><span id="dossier"></span></h1><br>
+			<p class="lead gsregular"><span id="name"></span><br><br><span id="name1"></span><br><br><span id="name2"></span><br><br><span id="name3"></span><br><br><span id="name4"></span><br><br><span id="name5"></span><br><br><span id="name6"></span><br><br><span id="name7"></span></p>
+		</main>
+
+		<footer class="mastfoot mt-auto">
+			<div class="inner gsregular">
+				<small class="text-muted">Copyleft <span class="mdi mdi-copyleft"></span> 2021-<script>var DT = new Date(); document.write(DT.getFullYear());</script> - <a href="#">SuperSuslik312</a><br><a href="//github.com/SuperSuslik312/SuperSuslik312.github.io">Site Repository on GitHub</a>
+				</small>
+			</div>
+		</footer>
+	</div>
+
+	<script>
+		$.i18n.init({
+			defaultLanguage: 'ru',
+			ns: { namespaces: ['ns.special'], defaultNs: 'ns.special'},
+			useLocalStorage: false,
+			debug: false
+		}, function() {
+			$('#title').text($.t('title'));
+			$('#name').text($.t('name'));
+			$('#name1').text($.t('name1'));
+			$('#name2').text($.t('name2'));
+			$('#name3').text($.t('name3'));
+			$('#name4').text($.t('name4'));
+			$('#name5').text($.t('name5'));
+			$('#name6').text($.t('name6'));
+			$('#name7').text($.t('name7'));
+			$('#nav_home').text($.t('nav_home'));
+			$('#nav_about').text($.t('nav_about'));
+			$('#dossier').text($.t('dossier'));
+			$('#about').text($.t('about'));
+			$('#about-movies').text($.t('about-movies'));
+		});
+	</script>
+
+	<script type="text/javascript">
+		$('#lang').on('show.bs.dropdown', function () {
+		})
+	</script>
+</body>
+</html>

@@ -19,6 +19,7 @@
 	<script src="/src/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="/src/i18n.js"></script>
+	<script src="/src/i18n_a.js"></script>
 
 
 	<!-- Styles -->
@@ -155,9 +156,9 @@
 		<script type="text/javascript">
 			$(window).on('load', function () {
 				var $preloader = $('#page-preloader'),
-				$spinner   = $preloader.find('.spin');
-				$spinner.fadeOut();
-				$preloader.delay(200).fadeOut('slow');
+				$spinner = $preloader.find('.spin');
+				$spinner.fadeOut(1500);
+				$preloader.delay(1500).fadeOut(1500);
 			});
 		</script>
 	</div>
@@ -255,46 +256,14 @@
 
 		<footer class="mastfoot mt-auto">
 			<div class="inner gsregular">
-				<small class="text-muted">Copyleft <span class="mdi mdi-copyleft"></span> 2021-<script>var DT = new Date(); document.write(DT.getFullYear());</script> - <a href="#">SuperSuslik312</a><br><a href="//github.com/SuperSuslik312/SuperSuslik312.github.io">Site Repository on GitHub</a>
+				<small class="text-muted">
+					Copyleft <span class="mdi mdi-copyleft"></span> 2021-<script>var DT = new Date(); document.write(DT.getFullYear());</script> - <a href="#">SuperSuslik312</a> - All Wrongs Reserved
+					<br>
+					<a href="//github.com/SuperSuslik312/SuperSuslik312.github.io">Site Repository on GitHub</a>
 				</small>
 			</div>
 		</footer>
 	</div>
-
-	<script>
-		$.i18n.init({
-			defaultLanguage: 'ru',
-			ns: { namespaces: ['ns.special'], defaultNs: 'ns.special'},
-			useLocalStorage: false,
-			debug: false
-		}, function() {
-			$('#title').text($.t('title'));
-			$('#nav_home').text($.t('nav_home'));
-			$('#nav_about').text($.t('nav_about'));
-			$('#movies').text($.t('movies'));
-			$('#about').text($.t('about'));
-			$('#about-movies').text($.t('about-movies'));
-			$('#pictures').text($.t('pictures'));
-			$('#film1').attr("href", $.t('film1'));
-			$('#film1img').attr("src", $.t('film1img'));
-			$('#film2').attr("href", $.t('film2'));
-			$('#film2img').attr("src", $.t('film2img'));
-			$('#film3').attr("href", $.t('film3'));
-			$('#film3img').attr("src", $.t('film3img'));
-			$('#film4').attr("href", $.t('film4'));
-			$('#film4img').attr("src", $.t('film4img'));
-			$('#film5').attr("href", $.t('film5'));
-			$('#film5img').attr("src", $.t('film5img'));
-			$('#film6').attr("href", $.t('film6'));
-			$('#film6img').attr("src", $.t('film6img'));
-			$('#film7').attr("href", $.t('film7'));
-			$('#film7img').attr("src", $.t('film7img'));
-			$('#film8').attr("href", $.t('film8'));
-			$('#film8img').attr("src", $.t('film8img'));
-			$('#film9').attr("href", $.t('film9'));
-			$('#film9img').attr("src", $.t('film9img'));
-		});
-	</script>
 
 	<script type="text/javascript">
 		$('#lang').on('show.bs.dropdown', function () {

@@ -19,6 +19,7 @@
 	<script src="/src/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="/src/i18n.js"></script>
+	<script src="/src/i18n_a.js"></script>
 
 
 	<!-- Styles -->
@@ -155,7 +156,7 @@
 		<script type="text/javascript">
 			$(window).on('load', function () {
 				var $preloader = $('#page-preloader'),
-				$spinner   = $preloader.find('.spin');
+				$spinner = $preloader.find('.spin');
 				$spinner.fadeOut();
 				$preloader.delay(200).fadeOut('slow');
 			});
@@ -196,35 +197,14 @@
 
 		<footer class="mastfoot mt-auto">
 			<div class="inner gsregular">
-				<small class="text-muted">Copyleft <span class="mdi mdi-copyleft"></span> 2021-<script>var DT = new Date(); document.write(DT.getFullYear());</script> - <a href="#">SuperSuslik312</a><br><a href="//github.com/SuperSuslik312/SuperSuslik312.github.io">Site Repository on GitHub</a>
+				<small class="text-muted">
+					Copyleft <span class="mdi mdi-copyleft"></span> 2021-<script>var DT = new Date(); document.write(DT.getFullYear());</script> - <a href="#">SuperSuslik312</a> - All Wrongs Reserved
+					<br>
+					<a href="//github.com/SuperSuslik312/SuperSuslik312.github.io">Site Repository on GitHub</a>
 				</small>
 			</div>
 		</footer>
 	</div>
-
-	<script>
-		$.i18n.init({
-			defaultLanguage: 'ru',
-			ns: { namespaces: ['ns.special'], defaultNs: 'ns.special'},
-			useLocalStorage: false,
-			debug: false
-		}, function() {
-			$('#title').text($.t('title'));
-			$('#name').text($.t('name'));
-			$('#name1').text($.t('name1'));
-			$('#name2').text($.t('name2'));
-			$('#name3').text($.t('name3'));
-			$('#name4').text($.t('name4'));
-			$('#name5').text($.t('name5'));
-			$('#name6').text($.t('name6'));
-			$('#name7').text($.t('name7'));
-			$('#nav_home').text($.t('nav_home'));
-			$('#nav_about').text($.t('nav_about'));
-			$('#dossier').text($.t('dossier'));
-			$('#about').text($.t('about'));
-			$('#about-movies').text($.t('about-movies'));
-		});
-	</script>
 
 	<script type="text/javascript">
 		$('#lang').on('show.bs.dropdown', function () {

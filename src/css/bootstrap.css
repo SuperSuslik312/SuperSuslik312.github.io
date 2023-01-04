@@ -1,4 +1,4 @@
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
     #page-preloader {
         position: fixed;
         left: 0;
@@ -27,33 +27,31 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
+} */
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100500;
+    background: #111;
 }
-@media (prefers-color-scheme: dark) {
-    #page-preloader {
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 100500;
-        background: #111;
-    }
-    #page-preloader .spin {
-        position: absolute;
-        color: #f5f5f5;
-        font-size: 36px;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-    }
-    .pattern {
-        background-image: url(../images/bkg-dark.svg);
-        background-size: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
+#page-preloader .spin {
+    position: absolute;
+    color: #f5f5f5;
+    font-size: 36px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.pattern {
+    background-image: url(../images/bkg-dark.svg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .spinner {
     -webkit-animation: rotation 1.35s linear infinite;

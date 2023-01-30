@@ -6,9 +6,11 @@ $.i18n.init({
 }, function() {
     $('#title').text($.t('title'));
     $('#dossier').text($.t('dossier'));
+    $('#system').text($.t('system'));
     $('#movies').text($.t('movies'));
     $('#pictures').text($.t('pictures'));
     $('#about').text($.t('about'));
+    $('#about-system').text($.t('about-system'));
     $('#about-movies').text($.t('about-movies'));
     $('#nav_home').text($.t('nav_home'));
     $('#nav_about').text($.t('nav_about'));

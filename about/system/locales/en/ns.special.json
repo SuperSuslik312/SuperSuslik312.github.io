@@ -1,0 +1,15 @@
+{
+	"nav_home": "Home",
+	"nav_about": "Dossier",
+	"system": "System setup",
+	"title": "Dossier",
+	"about": "Brief information",
+	"about-system": "System setup",
+	"about-movies": "Favorite movies",
+	"name": "Operating system: Arch Linux",
+	"name1": "Graphical interface: Awesome window manager",
+	"name2": "CPU: AMD Ryzen 5 4600H",
+	"name3": "GPU: NVIDIA GeForce GTX 1650 (Laptop)",
+	"name4": "RAM: 8 GiB DDR4 SO-DIMM 3200 MHz",
+	"name5": "Disk space: 256 GiB NVMe SSD + 1 TiB HDD"
+}

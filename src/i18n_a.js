@@ -14,6 +14,7 @@ $.i18n.init({
     $('#about-movies').text($.t('about-movies'));
     $('#nav_home').text($.t('nav_home'));
     $('#nav_about').text($.t('nav_about'));
+    $('#not-found').text($.t('not-found'));
     $('#name').text($.t('name'));
     $('#name1').text($.t('name1'));
     $('#name2').text($.t('name2'));

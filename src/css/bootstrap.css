@@ -2777,23 +2777,26 @@ td {
     width: 64px;
     margin-bottom: 1rem;
 }
-a.spotify:hover {
-    color: #1db954 !important;
+a.mastodon:hover {
+    color: #6364FF !important;
 }
-a.youtube:hover {
-    color: red !important;
+a.shikimori:hover {
+    color: #343434 !important;
 }
 a.vk:hover {
-    color: #2787f5 !important;
+    color: #0077FF !important;
 }
 a.twitter:hover {
     color: #1da1f2 !important;
 }
-a.instagram:hover {
-    color: #e1306c !important;
+a.github:hover {
+    color: #181717 !important;
 }
 a.telegram:hover {
-    color: #08c !important;
+    color: #26A5E4 !important;
+}
+a.steam:hover {
+    color: #000000 !important;
 }
 .lang {
     color: #fff;

@@ -23,6 +23,8 @@ $.i18n.init({
     $('#name5').text($.t('name5'));
     $('#name6').text($.t('name6'));
     $('#name7').text($.t('name7'));
+    $('#age1').text($.t('age1'));
+    $('#age2').text($.t('age2'));
     $('#film1').attr("href", $.t('film1'));
     $('#film1img').attr("src", $.t('film1img'));
     $('#film2').attr("href", $.t('film2'));

@@ -2798,6 +2798,9 @@ a.telegram:hover {
 a.steam:hover {
     color: #000000 !important;
 }
+a.matrix:hover {
+    color: #000000 !important;
+}
 .lang {
     color: #fff;
 }

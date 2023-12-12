@@ -43,4 +43,6 @@ $.i18n.init({
     $('#film8img').attr("src", $.t('film8img'));
     $('#film9').attr("href", $.t('film9'));
     $('#film9img').attr("src", $.t('film9img'));
+    $('#film10').attr("href", $.t('film10'));
+    $('#film10img').attr("src", $.t('film10img'));
 });

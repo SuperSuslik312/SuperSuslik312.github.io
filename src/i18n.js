@@ -68,7 +68,7 @@
             setJqueryExt: !0,
             defaultValueFromContent: !0,
             useDataAttrOptions: !1,
-            cookieExpirationTime: void 0,
+            cookieExpirationTime: 5256e2,
             useCookie: !0,
             cookieName: "lang",
             cookieDomain: void 0,
